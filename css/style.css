@@ -1,0 +1,1177 @@
+/*
+Theme Name: PowerWeb-IT
+Theme URI: https://powerwebit.com/
+Author: Sujon Kumar
+Author URI: https://powerwebit.com/
+Description: PowerWeb-IT is a leading solution provider for Internet based applications. Established in 2017, The Company has been promoted by some highly experienced Professionals dedicated to provide total IT solutions under one roof. It possesses not only the latest technology gadgets but also the most knowledgeable and experience hands to offer most user friendly customized solutions. PowerWeb-IT provides high quality on site services for software development and the end users on a broad range of hardware & software platforms and latest technologies.
+Version: 1.0
+License: free license 
+License URI: https://powerwebit.com/
+Text Domain: powerwebit
+Tags: Header, Footer, Slider. 
+*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+ul,ol{
+    list-style-type: none;
+    margin: 0px;
+}
+li{
+
+}
+a, a:hover{
+    text-decoration: none;
+}
+img{
+    margin: 0px;
+    border: 0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Rubik;
+}
+
+body{
+
+}
+
+/**  HeaderTop section Starts  **/
+
+.headerTop{
+    background-color: #2165d0;
+    padding: 10px 0px;
+}
+.headerTop ul{
+    float: right;
+}
+.headerTop ul li{
+    display: inline-block;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.headerTop ul li a{
+    color: #24ffff;
+    text-decoration: none;
+}
+.headerTop ul li a i{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.headerTop ul li a:hover{
+  color: #fff;
+}
+/**  HeaderTop section End  **/
+
+/**  Navigation section Starts **/
+
+.custom_nav{
+    border: 0px;
+    border-radius: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.nav_menu > li > a{
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    margin: 15px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.nav_menu > li:last-child > a{
+    margin-right: 0px;
+}
+.nav_menu > li:hover > a{
+    background: transparent;
+    color: #F6795A;
+}
+.nav_menu > li > a:focus{
+    background: transparent;
+    outline: 0;
+}
+.nav_menu > li > a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    right: 0px;
+    top: 0px;
+    background: #F6795A;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+.nav_menu > li > a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    background: #F6795A;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+.nav_menu > li:hover > a::before{
+    width: 100%;
+}
+.nav_menu > li:hover > a::after{
+    width: 100%;
+}
+.nav_menu li{
+    position: relative;
+}
+.nav_menu li ul{
+    position: absolute;
+    background: #333;
+    box-shadow: 0px 0px 5px #333333;
+    padding: 0px;
+    min-width: 200px;
+    left: 100px;
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    z-index: 999;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.nav_menu > li:hover > ul{
+    left: 15px;
+    visibility: visible;
+    opacity: 1;
+}
+.nav_menu > li > ul li ul{
+    left: 150%;
+    top: 0;
+}
+.nav_menu > li > ul > li:hover > ul{
+    left: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.nav_menu li ul li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px 30px;
+    line-height: 50px;
+    border-bottom: 1px solid #404040;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.nav_menu li ul li:hover > a{
+    text-decoration: none;
+    color: #F6795A;
+    padding-left: 15px;
+}
+.brand{
+    padding: 0px 15px;
+}
+.brand_img{
+    max-height: 350px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.activeMenu{
+    color: #00c2ff !important;
+    font-weight: 600 !important;
+}
+.custom_toggle{
+    background: #3EABA8;
+    border-radius: 0;
+    color: #fff;
+}
+.affix {
+    top:0;
+    width: 100%;
+    background: rgba(0,0,0,0.5)!important;
+    z-index: 9999 !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.affix .brand_img{
+    max-height: 40px;
+}
+.affix .nav_menu > li > a{
+    padding: 10px 0px;
+    margin: 0px 15px 10px;
+}
+.affix .nav_menu > li:last-child > a{
+    margin-right: 0px;
+}
+.subNavArrowIcon{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+header{
+    position: relative;
+}
+
+/** ########## Navigation section End ########## **/
+
+/** ########## Banner section Starts ########## **/
+.durbinBgVideo,
+.bannerImg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header{
+    position: relative;
+}
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/overlay.png), -webkit-linear-gradient(#000,transparent);
+    background: url(../images/overlay.png), -moz-linear-gradient(#000,transparent);
+    background: url(../images/overlay.png), -o-linear-gradient(#000,transparent);
+    background: url(../images/overlay.png), linear-gradient(#000,transparent);
+}
+
+.videoTxtContainer{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    max-width: 40%;
+    color: #fff;
+    z-index: 9;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.videoTxtContainer h2{
+    color:#FFFFFF;
+    font-size:25px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    font-family:Rubik;
+    margin-bottom: 20px;
+}
+
+.videoTxtContainer p{
+    color:#FFFFFF;
+    font-size:19px;
+    font-family:Lato;
+    margin: 0px;
+    text-transform: full-size-kana;
+}
+
+.videoTxtContainer .sectionTitle{
+    text-align: left;
+}
+
+.scroll{
+    position: absolute;
+    display:inline-block;
+    padding-top: 210px;
+    margin-left: 555px;
+}
+
+.mouse img{
+    position: absolute;
+    padding-top: -70px;
+    margin-top: -25px;
+    margin-left: 8px;
+}
+
+.mouse p i{
+    position: absolute;
+    padding-top: -70px;
+    margin-top: -20px;
+    margin-left: 2px;
+    color:#F6795A;
+    font-size: 20px;
+}
+
+.videoTxtContainer a:hover{
+    color:#F6795A;
+    transition:all linear .2s;
+    transform:scaleX(1.2);
+}
+
+/** ########## Banner section end ########## **/
+
+/** ########## Product section Starts ########## **/
+.product{
+    background-color: #f5f5f5;
+    padding: 30px 0px 30px 0px;
+}
+
+.product_cont h3{
+    font-size: 44px;
+    font-family: Rubik;
+    color: #393232;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.product_cont p{
+    font-size: 16px;
+    font-family: Lato;
+    color: #393232;
+    margin-bottom: 20px;
+}
+
+.border_bottom{
+    border-bottom: 1px solid #fd7c5c;
+    width: 95px;
+    margin-left: 538px;
+
+}
+
+.service{
+    border: 2px solid #fd7c5c;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    height: 310px;
+}
+
+.service h4{
+    padding-top: 66px;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.service p{
+    padding-top: 22px;
+    font-family: Lato;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+
+.service h6{
+    padding-top: 60px;
+    text-align: center;
+    font-family: Myriad Pro;
+    font-size: 14px;
+    margin-bottom: 27px;
+}
+
+.service h6 a{
+    color: #fd7c5c;
+}
+
+.pro_icon{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border: 2px solid #fd7c5c;
+    margin-top: -342px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+
+}
+
+.pro_icon:hover{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.pro_botom{
+    padding-bottom: 28px;
+}
+
+.icon_img{
+    padding: 14px 18px;
+}
+
+.icon_img1{
+    padding: 14px 26px;
+}
+
+.icon_img2{
+    padding: 17px 14px;
+}
+
+/** ########## Product section End ########## **/
+
+/** ########## What section Start ########## **/
+.what{
+    background-color: #FFFFFF;
+    padding: 30px 0px;
+}
+.what_we h4{
+    font-size: 18px;
+    font-family: Rubik;
+    color: #393232;
+    font-weight: bold;
+    padding: 18px 0px 22px 0px;
+}
+
+.what_we p{
+    font-size: 14px;
+    font-family: Lato;
+    color: #393232;
+    padding-bottom: 18px;
+}
+
+.what_we h6{
+    font-size: 14px;
+    font-family: Myriad Pro;
+}
+
+.what_we h6 a{
+    color: #fd7c5c;
+}
+
+/** ########## What section End ########## **/
+
+/** ########## Check section End ########## **/
+.check{
+    padding: 30px 0px 10px 0px;
+    background-color: #f5f5f5;
+}
+.nav-tabs {
+    border: none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border-width: 0;
+}
+.nav-tabs > li > a {
+    border: none;
+    color: #666;
+}
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+    border: none;
+    color: #393232 !important;
+    background: transparent;
+}
+.nav-tabs > li > a::after {
+    content: "";
+    background: #fd7c5c;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+    transform: scale(1);
+}
+.tab-nav > li > a::after {
+    background: #21527d none repeat scroll 0% 0%;
+    color: #fff;
+}
+
+.check_border{
+    padding-top: 60px;
+}
+
+
+.product_cont span{
+    border-bottom: 1px solid #fd7c5c;
+}
+
+.first_col{
+    position: relative;
+    overflow: hidden;
+}
+
+.caption{
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(66, 139, 202, 0.75);
+    width:100%;
+    height:75%;
+    padding:2%;
+    display: none;
+    color:#fff !important;
+    z-index:2;
+    border: none;
+    border-radius: inherit;
+}
+
+.caption1{
+    width:100%;
+    height:543px;
+}
+
+.caption2{
+    width:100%;
+    height:235px;
+}
+
+.link_icon{
+    color: #FFFFFF;
+    font-size: 30px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 7px;
+    text-align: center;
+    margin:90px 0px 0px 0px;
+}
+
+.link_icon1{
+    color: #FFFFFF;
+    font-size: 30px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 7px;
+    text-align: center;
+    margin:250px 0px 0px 0px;
+}
+
+.first_col p{
+    text-align: center;
+    font-size: 14px;
+    font-family: Lato;
+    padding: 20px 0px;
+    border: 1px solid #949494;
+    width: 340px;
+    background-color: #f5f5f5;
+    color: #393232;
+}
+
+.invit{
+    margin-bottom: 20px;
+}
+/** ########## Check section End ########## **/
+
+/** ########## Clients section Start ########## **/
+.clients{
+    padding: 30px 0px;
+    background-color: #FFFFFF;
+}
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 0px 30px 0px;
+}
+
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    margin-right: -19px;
+}
+
+.carousel-indicators li {
+    background: #cecece;
+}
+.carousel-indicators .active {
+    background: #fd7c5c;
+}
+
+.img_bor{
+    border: 1px solid #000000;
+    padding: 8px 55px;
+}
+
+.img_bor1{
+    border: 1px solid #000000;
+    padding: 10px 48px;
+}
+
+.img_bor2{
+    border: 1px solid #000000;
+    padding: 12px 30px;
+}
+
+.img_bor3{
+    border: 1px solid #000000;
+    padding: 14px 28px;
+}
+/** ########## Clients section End ########## **/
+
+/** ########## Team section Start ########## **/
+.team{
+    background-color: #f5f5f5;
+    padding: 30px 0px;
+}
+
+.projectCol{
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.projectCol img{
+    width: 250px;
+    height: 412px;
+}
+.projectInfo{
+    position: absolute;
+    width: calc(100% - 10px);
+    height: 0px;
+    bottom: 5px;
+    right: 5px;
+    background-color: #000000;
+    opacity: 0.5;
+    color: #fff;
+    transition: .5s;
+    padding: 0 5px;
+    overflow: hidden;
+}
+.projectCol:hover .projectInfo{
+    height: calc(100% - 10px);
+    width: 250px;
+    margin-right: 30px;
+}
+
+.projectInfo p{
+    font-size: 20px;
+    color: #0080ff;
+    margin-top: 60%;
+    text-transform: ;
+    padding-bottom: 18px;
+}
+
+.team_btn{
+   padding-top: 30px;
+}
+
+.more_btn{
+    margin-top: 30px;
+}
+
+.social_icon{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.social_icon:hover{
+
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background-color: #4267b2;
+    color: #000000;
+    padding: 10px 10px;
+}
+/** ########## Team section End ########## **/
+
+/** ########## Contact section Start ########## **/
+.contact{
+    padding: 30px 0px;
+}
+
+.inputfield{
+    width: 270px;
+    height: 58px;
+    padding-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid #727272;
+}
+
+.inputfield:hover{
+    border-color: #F6795A;
+}
+
+.t_area{
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 30px;
+    width: 547px;
+    height: 214px;
+    background-color: #f5f5f5;
+    border: 1px solid #393232;
+}
+
+.t_area:hover{
+    border-color: #F6795A;
+}
+
+.chinaBtn {
+    text-align: center;
+    background: transparent;
+    color: #F6795A;
+    cursor: pointer;
+    border: none;
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 45px;
+    margin: 0 auto;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -ms-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+.chinaBtn:hover {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #3EABA8;
+}
+.chinaBtn svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.chinaBtn rect {
+    fill: none;
+    stroke: #F6795A;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+.chinaBtn:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/** ########## Contact section End ########## **/
+
+/** ########## Footer Top section Start ########## **/
+.footerSec{
+    background-color: #29292c;
+    padding: 30px 0px;
+}
+
+.subSecTitle{
+    color: #FFFFFF;
+    padding-bottom: 30px;
+    font-family: Rubik;
+    font-size: 24px;
+}
+
+.footerMenuCol ul li a{
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.footerMenuCol ul li a:hover{
+    color: #035794;
+}
+
+.footerLinks{
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+
+.footerLinks:hover{
+    color: #fd7c5c;
+}
+
+.social{
+    margin-top: 30px;
+}
+
+.socialLink{
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 17px 17px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.face{
+    padding: 17px 24px;
+}
+
+.linkin{
+    padding: 17px 20px;
+}
+
+.socialLink:hover{
+    color: #035794;
+    border-color: #fd7c5c;;
+}
+/** ########## Footer Top section End ########## **/
+
+/** ########## Footer section Start ########## **/
+.last_footer{
+    background-color: #000000;
+}
+
+.last_footer p{
+    color: #FFFFFF;
+    line-height: 30px;
+    font-family: Lato;
+    font-size: 14px;
+}
+/** ########## Footer section End ########## **/
+
+/** ########## Contact section Start ########## **/
+.map{
+    background-color: #f5f5f5;
+    padding: 30px 0px;
+}
+
+.con_pra{
+    font-size: 16px;
+    font-family: Lato;
+    color: #393232;
+    line-height: 25px;
+}
+
+.cont_field{
+    width: 557px;
+    height: 57px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #393232;
+}
+
+.cont_field:hover{
+    border-color: #fd7c5c;
+}
+
+.first{
+    margin-right: 20px;
+}
+
+.text_con{
+    width: 1135px;
+    height: 214px;
+    margin-bottom: 30px;
+    padding: 20px 0px 0px 15px;
+    border: 1px solid #393232;
+}
+
+.text_con:hover{
+    border-color: #fd7c5c;
+}
+/** ########## Contact section Start ########## **/
+
+/** ########## About section Start ########## **/
+.about{
+
+    padding: 30px 0px;
+}
+
+.about_con p{
+    font-size: 18px;
+    font-family: "Times New Roman";
+    text-align: justify;
+    color: #393232;
+}
+
+.message{
+    padding: 30px 0px;
+    background-color: #f5f5f5;
+}
+
+.thumbnail img{
+    height: 300px;
+    width: 550px;
+}
+
+.testimonial h3{
+    text-align: center;
+    margin: 15px;
+    font-family: Rubik;
+ }
+
+.testimonial h5{
+    text-align: center;
+    font-family: Rubik;
+}
+
+.testimonial p{
+    text-align: justify;
+    margin: 20px 10px;
+    font-family: Lato;
+    font-size: 14px;
+}
+
+.All_team{
+    padding: 30px 0px;
+}
+
+.team_profile{
+    margin-top: 25px;
+}
+.team_profile h1{
+    font-weight: normal;
+    font-size: 20px;
+    margin:10px 0 0 0;
+    text-align: center;
+    font-family: Rubik;
+}
+.team_profile h2{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Rubik;
+}
+
+.team_profile p{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Lato;
+}
+
+.team_profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.team_profile .img-box:after{
+    content:"";
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.img-box ul{
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    height: 0px;
+    margin:0px;
+    opacity: 0;
+}
+.team_profile .img-box:after, .img-box ul, .img-box ul li{
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.img-box ul i{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+.img-box ul li{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #88C425;
+    margin: 2px;
+    padding: 5px;
+    display: inline-block;
+}
+.img-box a{
+    color:#fff;
+}
+.img-box:hover:after{
+    opacity: 1;
+    cursor: pointer;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box ul a{
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.img-box a:hover li{
+    border-color: #fd7c5c;
+    color: #fd7c5c;
+}
+a{
+    color:#88C425;
+}
+a:hover{
+    text-decoration:none;
+    color:#519548;
+}
+
+/** ########## About section End ########## **/
+
+/** ########## Web Development section Start ########## **/
+.web_dev{
+    padding: 30px 0px;
+    background-color: #EEEEEE;
+}
+
+.web_cont p{
+    font-size: 14px;
+    text-align: justify;
+    font-family: Lato;
+}
+
+.SoftwareSec{
+    padding: 30px 0px;
+    background-color: #f5f5f5;
+}
+
+.soft_cont i{
+    font-size: 70px;
+    margin-bottom: 15px;
+    color: #fd7c5c;
+}
+
+.soft_cont h4{
+    color: #393232;
+    font-family: Rubik;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.soft_cont p{
+    font-size: 14px;
+    font-family: Lato;
+}
+
+.featuredSec{
+    padding: 30px 0px;
+}
+
+.ViewPoject{
+    padding: 30px 0px;
+    background-color: #f5f5f5;
+}
+
+.viewSec h3{
+      font-size: 44px;
+      margin-bottom: 20px;
+      font-family: Rubik;
+  }
+
+.viewSec p{
+    font-size: 14px;
+    font-family: Lato;
+    margin-bottom: 20px;
+}
+/** ########## web Development section End ########## **/
+
+/** ########## Product section Start ########## **/
+.OurPoject{
+    background-color: #FFFFFF;
+}
+
+.HospitalFeature{
+    padding: 30px 0px;
+    background-color: #f5f5f5;
+}
+
+.featured_Sec{
+    margin-bottom: 20px;
+}
+
+h4{
+    font-weight: 600;
+}
+p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.price{
+    font-size: 30px;
+    margin: 0 auto;
+    color: #333;
+}
+.right{
+    float:right;
+    border-bottom: 2px solid #4B8E4B;
+}
+.thumbnail{
+    opacity:0.70;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.thumbnail:hover{
+    opacity:1.00;
+    box-shadow: 0px 0px 10px #fd7c5c;
+}
+.line {
+    margin-bottom: 5px;
+}
+
+.buy_btn{
+    background-color: #fd7c5c;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.pro_feature h4{
+    padding-top: 10px;
+}
+@media screen and (max-width: 770px) {
+    .right{
+        float:left;
+        width: 100%;
+    }
+}
+/** ########## Product section End ########## **/
+
+/** ########## Pos software section Start########## **/
+#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav{
+    background:#eee;
+}
+
+.top li{
+    padding-top: -150px;
+}
+
+.pos_descri{
+    background-color: #fd7c5c;
+    font-size: 20px;
+    padding: 10px 0px;
+    color: #FFFFFF;
+}
+/** ########## Pos software section End ########## **/

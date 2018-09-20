@@ -1,0 +1,183 @@
+@media only screen and (max-width: 1200px){
+    .nav>li>a {
+        padding: 10px 6px;
+    }
+    .menu_bar a {
+        font-size: 15px;
+    }
+    .menu_bar_right a {
+        font-size: 14px;
+    }
+    .bonus h2 {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+    .bonus p {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .account a ul li {
+        color: #2daae1;
+    }
+
+    .menu_bar a {
+        font-size: 14px;
+    }
+
+    .menu_bar_right i {
+        display: none;
+    }
+
+    .nav > li > a {
+        padding: 10px 4px;
+    }
+
+    .money_back {
+        padding: 10px 10px !important;
+    }
+
+    .money_back span {
+        display: none;
+    }
+
+    .menu_bar_right a {
+        text-transform: capitalize;
+    }
+
+    .ionizer_text p {
+        font-size: 17px;
+    }
+
+    .ionizer_img p {
+        font-size: 15px;
+    }
+
+    .buying_text h2 {
+        font-size: 40px;
+        margin: 20px 0px 10px;
+    }
+
+    .but_why p, .benefits p {
+        font-size: 35px;
+        line-height: 90px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .headertop_social {
+            display: none;
+        }
+
+        .header_top_right ul {
+            float: none;
+        }
+
+        .logo {
+            margin: 0px auto;
+            margin-bottom: 20px;
+        }
+
+        .account {
+            float: left;
+        }
+
+        .ionizer_text, .buying_text {
+            padding: 0px 15px;
+        }
+
+        .ionizer_img {
+            height: 255px;
+        }
+
+        .ionizer_content {
+            margin-bottom: 20px;
+        }
+
+        .buying_img {
+            margin: auto;
+        }
+
+        .but_why p, .benefits p {
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        .contact_content {
+            min-height: 155px;
+        }
+
+        .discount h3, .weight_loss h3, .buying_text h2 {
+            font-size: 26px;
+        }
+
+        .discount p, .weight_loss p, .buying_text p {
+            font-size: 16px;
+        }
+
+        .twitter_img {
+            padding-right: 15px;
+        }
+
+        .twitter_text {
+            padding-left: 15px;
+        }
+
+        .menu_bar a {
+            text-align: center;
+        }
+
+        .menu_bar li:hover a::after {
+            width: 50%;
+            left: 25%;
+            right: 25%;
+        }
+
+        .active > a:after {
+            width: 80%;
+            left: 10%;
+            right: 10%;
+        }
+
+        .tp-leftarrow.default, .tp-rightarrow.default {
+            background: transparent;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .header_top_right ul li img {
+            margin: 0px 5px 0px 5px;
+        }
+
+        .buying_img {
+            max-height: 50%;
+            max-width: 50%;
+        }
+
+        .bonus h2 {
+            font-size: 35px;
+        }
+
+        .bonus p {
+            font-size: 25px;
+        }
+
+        .message h3 {
+            font-size: 30px;
+        }
+
+        .message p {
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .header_top_right ul li {
+            font-size: 12px;
+            margin: 5px 0px 5px;
+        }
+
+        .account a ul li i {
+            padding: 0px 15px;
+        }
+    }
+}
+    
